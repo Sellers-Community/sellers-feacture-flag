@@ -20,3 +20,7 @@ spring:
 
 server:
   port: 8040
+
+service:
+  flag-clients:
+    url:

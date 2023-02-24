@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Map;
 
-@FeignClient(name = "feacture-flag", url = "/feactures")
+@FeignClient(name = "feacture-flag", url = "${service.flag-clients.url}")
 public interface GetIsEnabledFeactureFlagClient {
 
-    @GetMapping("/{feactureName}")
+    @GetMapping("/")
     Boolean execute(@PathVariable("feactureName") String feactureName,
                     @RequestParam Map<String, String> feactureParams);
 
