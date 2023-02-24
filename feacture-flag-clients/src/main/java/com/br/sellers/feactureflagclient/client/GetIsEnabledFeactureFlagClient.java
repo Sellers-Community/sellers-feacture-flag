@@ -10,7 +10,7 @@ import java.util.Map;
 @FeignClient(name = "feacture-flag", url = "${service.flag-clients.url}")
 public interface GetIsEnabledFeactureFlagClient {
 
-    @GetMapping("/")
+    @GetMapping("/{feactureName}")
     Boolean execute(@PathVariable("feactureName") String feactureName,
                     @RequestParam Map<String, String> feactureParams);
 
