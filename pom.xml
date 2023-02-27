@@ -16,7 +16,6 @@
 
 	<modules>
 		<module>feacture-flag-service</module>
-		<module>feacture-flag-clients</module>
 	</modules>
 
 	<properties>
